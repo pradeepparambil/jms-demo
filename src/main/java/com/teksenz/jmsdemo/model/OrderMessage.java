@@ -7,13 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.UUID;
-
-@Data
 @Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class HelloWorldMessage implements Serializable {
-    static final long serialVersionUID = -8938998276889729104L;//Optional
+public class OrderMessage implements Serializable {
+    static final long serialVersionUID = -2250720526938998352L;
     private UUID id;
-    private String message;
+    private String product;
 }
