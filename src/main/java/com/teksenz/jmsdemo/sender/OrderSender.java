@@ -5,11 +5,10 @@ import com.teksenz.jmsdemo.model.OrderMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class OrderSender {
     private final JmsTemplate jmsTemplate;
